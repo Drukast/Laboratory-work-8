@@ -43,7 +43,3 @@ function AddBlogToList(blog) {
   DivList.push(NewDiv);
   BlogsElem.append(NewDiv);
 }
-
-fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: 'GET',
-}).then((response) => response.json()).then((json) => json.forEach((blog) => AddBlogToList(blog)))
